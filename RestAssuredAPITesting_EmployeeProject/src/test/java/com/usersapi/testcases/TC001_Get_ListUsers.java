@@ -43,7 +43,7 @@ public class TC001_Get_ListUsers extends TestBase {
 		/*
 		 * if (responseTime > 2000) logger.warn("Response time is greater than 2000");
 		 */
-		Assert.assertTrue(responseTime > 2000);
+		Assert.assertTrue(responseTime < 2000);
 	}
 
 	/*
