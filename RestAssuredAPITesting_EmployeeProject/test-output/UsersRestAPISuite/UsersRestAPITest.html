@@ -1,0 +1,209 @@
+<html>
+<head>
+<title>TestNG:  UsersRestAPITest</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>UsersRestAPITest</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>26/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Dec 05 16:57:46 IST 2022</td>
+</tr>
+<tr><td>Total time:</td><td>15 seconds (15486 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.usersapi.testcases.TC001_Get_ListUsers.checkContentEncoding()'><b>checkContentEncoding</b><br>Test class: com.usersapi.testcases.TC001_Get_ListUsers</td>
+<td></td>
+<td>0</td>
+<td>com.usersapi.testcases.TC001_Get_ListUsers@2a265ea9</td></tr>
+<tr>
+<td title='com.usersapi.testcases.TC002_Get_SingleUser.checkContentEncoding()'><b>checkContentEncoding</b><br>Test class: com.usersapi.testcases.TC002_Get_SingleUser</td>
+<td></td>
+<td>0</td>
+<td>com.usersapi.testcases.TC002_Get_SingleUser@11392934</td></tr>
+<tr>
+<td title='com.usersapi.testcases.TC005_Delete_UserRecord.checkContentEncoding()'><b>checkContentEncoding</b><br>Test class: com.usersapi.testcases.TC005_Delete_UserRecord</td>
+<td></td>
+<td>0</td>
+<td>com.usersapi.testcases.TC005_Delete_UserRecord@76a4ebf2</td></tr>
+<tr>
+<td title='com.usersapi.testcases.TC001_Get_ListUsers.checkContentType()'><b>checkContentType</b><br>Test class: com.usersapi.testcases.TC001_Get_ListUsers</td>
+<td></td>
+<td>0</td>
+<td>com.usersapi.testcases.TC001_Get_ListUsers@2a265ea9</td></tr>
+<tr>
+<td title='com.usersapi.testcases.TC002_Get_SingleUser.checkContentType()'><b>checkContentType</b><br>Test class: com.usersapi.testcases.TC002_Get_SingleUser</td>
+<td></td>
+<td>0</td>
+<td>com.usersapi.testcases.TC002_Get_SingleUser@11392934</td></tr>
+<tr>
+<td title='com.usersapi.testcases.TC003_Post_CreateUser.checkContentType()'><b>checkContentType</b><br>Test class: com.usersapi.testcases.TC003_Post_CreateUser</td>
+<td></td>
+<td>0</td>
+<td>com.usersapi.testcases.TC003_Post_CreateUser@6892b3b6</td></tr>
+<tr>
+<td title='com.usersapi.testcases.TC004_Put_UpdateExistingUserData.checkContentType()'><b>checkContentType</b><br>Test class: com.usersapi.testcases.TC004_Put_UpdateExistingUserData</td>
+<td></td>
+<td>0</td>
+<td>com.usersapi.testcases.TC004_Put_UpdateExistingUserData@6e6f2380</td></tr>
+<tr>
+<td title='com.usersapi.testcases.TC005_Delete_UserRecord.checkContentType()'><b>checkContentType</b><br>Test class: com.usersapi.testcases.TC005_Delete_UserRecord</td>
+<td></td>
+<td>0</td>
+<td>com.usersapi.testcases.TC005_Delete_UserRecord@76a4ebf2</td></tr>
+<tr>
+<td title='com.usersapi.testcases.TC001_Get_ListUsers.checkResponseBody()'><b>checkResponseBody</b><br>Test class: com.usersapi.testcases.TC001_Get_ListUsers</td>
+<td></td>
+<td>0</td>
+<td>com.usersapi.testcases.TC001_Get_ListUsers@2a265ea9</td></tr>
+<tr>
+<td title='com.usersapi.testcases.TC002_Get_SingleUser.checkResponseBody()'><b>checkResponseBody</b><br>Test class: com.usersapi.testcases.TC002_Get_SingleUser</td>
+<td></td>
+<td>0</td>
+<td>com.usersapi.testcases.TC002_Get_SingleUser@11392934</td></tr>
+<tr>
+<td title='com.usersapi.testcases.TC003_Post_CreateUser.checkResponseBody()'><b>checkResponseBody</b><br>Test class: com.usersapi.testcases.TC003_Post_CreateUser</td>
+<td></td>
+<td>0</td>
+<td>com.usersapi.testcases.TC003_Post_CreateUser@6892b3b6</td></tr>
+<tr>
+<td title='com.usersapi.testcases.TC004_Put_UpdateExistingUserData.checkResponseBody()'><b>checkResponseBody</b><br>Test class: com.usersapi.testcases.TC004_Put_UpdateExistingUserData</td>
+<td></td>
+<td>0</td>
+<td>com.usersapi.testcases.TC004_Put_UpdateExistingUserData@6e6f2380</td></tr>
+<tr>
+<td title='com.usersapi.testcases.TC005_Delete_UserRecord.checkResponseBody()'><b>checkResponseBody</b><br>Test class: com.usersapi.testcases.TC005_Delete_UserRecord</td>
+<td></td>
+<td>0</td>
+<td>com.usersapi.testcases.TC005_Delete_UserRecord@76a4ebf2</td></tr>
+<tr>
+<td title='com.usersapi.testcases.TC001_Get_ListUsers.checkResponseTime()'><b>checkResponseTime</b><br>Test class: com.usersapi.testcases.TC001_Get_ListUsers</td>
+<td></td>
+<td>0</td>
+<td>com.usersapi.testcases.TC001_Get_ListUsers@2a265ea9</td></tr>
+<tr>
+<td title='com.usersapi.testcases.TC002_Get_SingleUser.checkResponseTime()'><b>checkResponseTime</b><br>Test class: com.usersapi.testcases.TC002_Get_SingleUser</td>
+<td></td>
+<td>0</td>
+<td>com.usersapi.testcases.TC002_Get_SingleUser@11392934</td></tr>
+<tr>
+<td title='com.usersapi.testcases.TC005_Delete_UserRecord.checkResponseTime()'><b>checkResponseTime</b><br>Test class: com.usersapi.testcases.TC005_Delete_UserRecord</td>
+<td></td>
+<td>0</td>
+<td>com.usersapi.testcases.TC005_Delete_UserRecord@76a4ebf2</td></tr>
+<tr>
+<td title='com.usersapi.testcases.TC001_Get_ListUsers.checkServerType()'><b>checkServerType</b><br>Test class: com.usersapi.testcases.TC001_Get_ListUsers</td>
+<td></td>
+<td>0</td>
+<td>com.usersapi.testcases.TC001_Get_ListUsers@2a265ea9</td></tr>
+<tr>
+<td title='com.usersapi.testcases.TC002_Get_SingleUser.checkServerType()'><b>checkServerType</b><br>Test class: com.usersapi.testcases.TC002_Get_SingleUser</td>
+<td></td>
+<td>0</td>
+<td>com.usersapi.testcases.TC002_Get_SingleUser@11392934</td></tr>
+<tr>
+<td title='com.usersapi.testcases.TC003_Post_CreateUser.checkServerType()'><b>checkServerType</b><br>Test class: com.usersapi.testcases.TC003_Post_CreateUser</td>
+<td></td>
+<td>0</td>
+<td>com.usersapi.testcases.TC003_Post_CreateUser@6892b3b6</td></tr>
+<tr>
+<td title='com.usersapi.testcases.TC004_Put_UpdateExistingUserData.checkServerType()'><b>checkServerType</b><br>Test class: com.usersapi.testcases.TC004_Put_UpdateExistingUserData</td>
+<td></td>
+<td>0</td>
+<td>com.usersapi.testcases.TC004_Put_UpdateExistingUserData@6e6f2380</td></tr>
+<tr>
+<td title='com.usersapi.testcases.TC005_Delete_UserRecord.checkServerType()'><b>checkServerType</b><br>Test class: com.usersapi.testcases.TC005_Delete_UserRecord</td>
+<td></td>
+<td>0</td>
+<td>com.usersapi.testcases.TC005_Delete_UserRecord@76a4ebf2</td></tr>
+<tr>
+<td title='com.usersapi.testcases.TC001_Get_ListUsers.checkStatusCode()'><b>checkStatusCode</b><br>Test class: com.usersapi.testcases.TC001_Get_ListUsers</td>
+<td></td>
+<td>0</td>
+<td>com.usersapi.testcases.TC001_Get_ListUsers@2a265ea9</td></tr>
+<tr>
+<td title='com.usersapi.testcases.TC002_Get_SingleUser.checkStatusCode()'><b>checkStatusCode</b><br>Test class: com.usersapi.testcases.TC002_Get_SingleUser</td>
+<td></td>
+<td>0</td>
+<td>com.usersapi.testcases.TC002_Get_SingleUser@11392934</td></tr>
+<tr>
+<td title='com.usersapi.testcases.TC003_Post_CreateUser.checkStatusCode()'><b>checkStatusCode</b><br>Test class: com.usersapi.testcases.TC003_Post_CreateUser</td>
+<td></td>
+<td>0</td>
+<td>com.usersapi.testcases.TC003_Post_CreateUser@6892b3b6</td></tr>
+<tr>
+<td title='com.usersapi.testcases.TC004_Put_UpdateExistingUserData.checkStatusCode()'><b>checkStatusCode</b><br>Test class: com.usersapi.testcases.TC004_Put_UpdateExistingUserData</td>
+<td></td>
+<td>0</td>
+<td>com.usersapi.testcases.TC004_Put_UpdateExistingUserData@6e6f2380</td></tr>
+<tr>
+<td title='com.usersapi.testcases.TC005_Delete_UserRecord.checkStatusCode()'><b>checkStatusCode</b><br>Test class: com.usersapi.testcases.TC005_Delete_UserRecord</td>
+<td></td>
+<td>0</td>
+<td>com.usersapi.testcases.TC005_Delete_UserRecord@76a4ebf2</td></tr>
+</table><p>
+</body>
+</html>
